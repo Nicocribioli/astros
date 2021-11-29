@@ -1,0 +1,142 @@
+@import "variables";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;    
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $color-violeta;    
+    border-radius: 20px; 
+    border: 1px solid rgba(0, 0, 0, 0.349);
+}
+
+
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 100%); /* BACKGROUND GRADIANT */
+
+        h2{
+            color: $color-texto;
+            font-size: 1.5rem;
+            letter-spacing: 0.2rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+            letter-spacing: 0.2rem;
+        }
+
+        h4{
+            color: $color-texto;
+            font-size: 2.2rem;
+        }
+
+} /*------------------------------------------------- BODY */
+
+.titleIndex{
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+
+    color: #ffffffa4;
+    letter-spacing: 0.5rem;
+    text-shadow: $text-shadow2;
+    background-size: 30rem;
+} /*---------------------------------------------- TITULOS HEADER */
+
+
+.navPrueba{
+    background-color: rgba(0, 0, 0, 0.940);
+    width: fit-content;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-bottom: 5rem;
+}
+
+
+.nav__menu {
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    position: relative;
+}
+
+        .nav__menu--subrrayado:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color:  rgba(89, 48, 102, 0.822);
+            transform-origin: bottom right;
+            transition: transform 0.30s ease-out;           
+        }
+
+        .nav__menu--subrrayado:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .nav__menu--activo{
+        letter-spacing: 0.1rem;
+        text-decoration: underline 3px !important;
+        color:  rgba(89, 48, 102, 0.822) !important;
+        }
+
+        a:link{
+        color: $color-violeta;
+        text-decoration: none;
+        }
+
+        a:visited{
+        color: rgba(129, 23, 190, 0.288);
+        }
+
+        a:hover{
+        color:  rgba(89, 48, 102, 0.822);
+        }
+/* -------------------------------------------NAV BAR */
+
+
+footer{
+    text-shadow: 3px 3px 3px rgb(231, 77, 77);
+    display: flex;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
+    background-size: 30rem;
+
+    h4{
+        text-shadow: $text-shadow2;
+    }
+
+    .footer__redes a:link{
+            color: $color-violeta;
+        }
+
+        .footer__redes a:visited{
+            color: rgb(0, 250, 237);
+        }
+
+        .footer__redes--hover a:hover{
+            text-shadow: $text-shadow2;
+        }
+
+
+} /* --------------------------------------------FOOTER */

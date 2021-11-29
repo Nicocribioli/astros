@@ -1,0 +1,76 @@
+@import "variables";
+
+.gridSobrenos{
+    height: 42rem;
+    display: grid;
+    grid-template-columns: 1fr 20rem 1fr;
+    grid-template-rows: 10rem 10rem 10rem 10rem;
+    grid-column-gap: 4rem;
+    grid-template-areas:
+    "historia img1 integrantes"
+    "historia img2 integrantes"
+    "historia img3 integrantes"
+    "historia img4 integrantes"
+    ;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+/*-------------------------------------------------------------- GRID */
+        .titleSobre{
+            color: $color-texto;
+            background-color: $color-violeta;
+            text-align: center;
+            letter-spacing: 0.1rem;
+            text-shadow: $text-shadow;
+        }
+
+        .textoSobre{
+            color: rgb(141, 139, 155);
+            font-size: 1.1rem;
+            letter-spacing: 0.1rem;
+            background-image: url(https://jooinn.com/images/text-background-3.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            border: #4c008244 outset 0.5rem;
+        }
+
+        .historiaAstros{
+            grid-area: historia;
+            text-align:justify;
+            line-height: 2rem;
+        }
+
+        .integrantes{
+            grid-area: integrantes;
+            text-align: justify;
+            line-height: 1.5rem;
+        }
+
+        span{
+            background-color: black;
+            text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+        }
+
+        @each $img1 in imgClau, imgJoel,{
+            .#{$img1}{
+                grid-area: img1;
+                width: 11rem;
+                height: 10rem;
+                border-radius: 1.1rem;
+                border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+            }
+        }
+        
+        @each $img2 in imgNico, imgAndres,{
+            .#{$img2}{
+                grid-area: img2;
+                width: 11rem;
+                height: 10rem;
+                border-radius: 1.1rem;
+                margin-left: 10rem;
+                border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+            }
+        }
+}
+

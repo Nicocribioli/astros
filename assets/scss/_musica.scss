@@ -1,0 +1,30 @@
+@import "variables";
+
+.h2Videos{
+    margin: 2rem;
+    color: $color-texto;
+    background-color: #3d16478c;
+    border: inset $color-violeta 0.2rem;
+    width:fit-content;
+    text-shadow: $text-shadow;
+}
+
+.videosMusica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.videosMusica2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+
+iframe{
+    border-radius: 1.5rem;
+    height: 20rem; width: 25rem;
+    border: rgba(178, 149, 206, 0.363) ridge 0.2rem;
+}

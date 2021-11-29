@@ -1,0 +1,40 @@
+@import "variables";
+
+.galeria{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+    grid-template-columns: 18rem 18rem 18rem 18rem;
+    grid-template-rows: 17rem 17rem;
+    grid-gap: 1.3rem;
+    grid-template-areas: 
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img8"
+    ;
+/*-------------------------------------------------------------- GRID */
+
+@for $i from 1 through 8{
+    .galeria__img#{$i}{
+        position: absolute;
+        grid-area: img#{$i};
+        width: 18rem;
+        height: 13rem;
+        border-radius: 0.5rem;
+        transition: transform 1s;
+        z-index: 2;
+    }
+}
+
+@for $i from 1 through 8{
+    .galeria__img#{$i}--trans:hover .galeria__img#{$i}{
+        transform: translateY(37%);
+    }
+}
+
+        .galeria__texto{
+            color: $color-texto;
+            z-index: 1;
+            text-shadow: $text-shadow2;
+        }                           /* TEXTO ESCONDIDO */
+}

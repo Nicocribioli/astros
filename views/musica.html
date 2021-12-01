@@ -19,41 +19,54 @@
 
 <body>
         <header>
-                <h1 class="titleIndex p-4">MÚSICA</h1> <!-- TITULO -->
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                        <div class="container-fluid">
+                <h1 class="titleIndex p-4 d-lg-none">MÚSICA</h1> <!-- TITULO -->
+                <nav class="navbar navbar-expand-lg navbar-dark navPrueba mb-5"><!-- NAV BAR -->
+                        <div class="container-fluid fixed-top navPrueba align-items-start">
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                         aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
-                                        <ul class="navbar-nav fs-3 me-3">
-                                                <li class="nav-item mt-2 mt-lg-0 pe-lg-5 ps-lg-3">
-                                                        <a class="nav__menu nav__menu--subrrayado" href="../index.html">INICIO</a>
+                                <div class="collapse navbar-collapse offset-3 offset-lg-0" id="navbarNav">
+                                        <a class="me-4" href="../index.html">
+                                                <img class="d-none d-lg-inline" src="../imagenes/logo.png"
+                                                        alt="astros logo" width="40" height="40">
+                                        </a>
+                                        <ul class="navbar-nav fs-5 me-3">
+                                                <li class="nav-item mt-2 mb-2 mt-lg-0 mb-lg-0 pe-lg-3 ps-lg-0">
+                                                        <a class="nav__menu nav__menu--subrrayado" aria-current="page" href="../index.html">INICIO</a>
                                                 </li>
-                                                <li class="nav-item ps-5 mt-1 mb-2 mt-lg-0 mb-lg-0 pe-lg-5 ps-lg-0">
-                                                        <a class="nav__menu--activo" href="#">MÚSICA</a>
+                                                <li class="nav-item pe-3 ps-5 mb-2 mb-lg-0 ps-lg-0">
+                                                        <a class="nav__menu--activo" 
+                                                                href="#">MÚSICA
+                                                        </a>
                                                 </li>
-                                                <li class="nav-item pe-5">
-                                                        <a class="nav__menu nav__menu--subrrayado" href="./galeria.html">GALERÍA</a>
+                                                <li class="nav-item pe-3 mb-2 mb-lg-0">
+                                                        <a class="nav__menu nav__menu--subrrayado"
+                                                                href="./galeria.html">GALERÍA
+                                                        </a>
                                                 </li>
-                                                <li class="nav-item pe-5">
-                                                        <a class="nav__menu nav__menu--subrrayado" href="./fechas.html">FECHAS</a>
+                                                <li class="nav-item pe-3 mb-2 mb-lg-0">
+                                                        <a class="nav__menu nav__menu--subrrayado"
+                                                                href="./fechas.html">FECHAS
+                                                        </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                        <a class="nav__menu nav__menu--subrrayado" href="./sobrenosotros.html">SOBRE NOSOTROS</a>
+                                                        <a class="nav__menu nav__menu--subrrayado"
+                                                                href="./sobrenosotros.html">SOBRE NOSOTROS
+                                                        </a>
                                                 </li>
                                         </ul>
                                 </div>
                         </div>
-                </nav> <!-- NAV BAR -->
+                </nav>
+                <!----------------------------------------- NAV BAR -->
         </header>
         </ul>
         <div class="container-fluid d-flex justify-content-center justify-content-lg-start">
                 <h2 class="h2Videos fs-2">Ultimos Lanzamientos</h2>
         </div>
-        <section class="container-fluid">
+        <section class="container-fluid"><!-- VIDEOS -->
                 <div class="row">
                         <div class="videosMusica col-12 d-block d-lg-flex">
                                 <iframe class="ratio" width="560" height="315"
@@ -71,7 +84,8 @@
                                         frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
-                </div> <!-- PRIMERA FILA VIDEOS -->
+                        </div>                                  <!-- PRIMERA FILA VIDEOS -->
+
                         <div class="container-fluid d-flex justify-content-center justify-content-lg-start">
                                 <h2 class="h2Videos fs-2">Escucha nuestros temas</h2>
                         </div>
@@ -94,27 +108,45 @@
                         </div> <!-- SEGUNDA FILA VIDEOS-->
                 </div>
         </section>
-        <footer class="footer__bg">
-                <section class="container">
-                        <div class="d-flex justify-content-center">
-                                <h4>REDES</h4>
-                        </div>
-                        <div class="d-flex justify-content-center fs-1 footer__redes footer__redes--hover">
-                                <div>
-                                        <a class="me-5 pe-5 footer__redes footer__redes--hover"
+        <footer>
+                <section class="container"> <!-- FOOTER NAV -->
+                        <div class="d-flex flex-wrap fs-4 justify-content-evenly justify-content-lg-between footer__redes footer__redes--hover">
+                                <div class="d-flex flex-wrap bg-gradient ms-lg-5 mt-1">
+                                        <h4 class="fs-5">navegacion</h4>
+                                        <ul class="footer__nav">
+                                                <li>
+                                                        <a class="nav__menu" href="../index.html">INICIO</a>
+                                                </li>
+                                                <li class="nav-item mb-1">
+                                                        <a class="nav__menu--footer" href="#">MÚSICA</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav__menu" href="/views/galeria.html">GALERÍA</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav__menu" href="./fechas.html">FECHAS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav__menu" href="./sobrenosotros.html">SOBRE NOSOTROS</a>
+                                                </li>
+                                        </ul>
+                                </div> <!-- FOOTER NAV -->
+                                <div class=" d-flex align-items-end">
+                                        <h4 class="fs-5">© 2021 Copyright: Astros</h4>
+                                </div>
+                                <div class="d-lg-block mt-lg-5 me-lg-5">
+                                        <h4 class="fs-4 ms-4">redes</h4> <!-- REDES -->
+                                        <a class="me-3 fs-5 footer__redes--hover"
                                                 href="https://www.instagram.com/astrosmusica/" target="_blank">
                                                 <i class="fab fa-instagram"></i>
                                         </a>
-                                </div>
-                                <div>
-                                        <a class="me-5 pe-5 footer__redes footer__redes--hover"
+                                        <a class=" me-3 fs-5 footer__redes--hover"
                                                 href="https://www.youtube.com/channel/UCbcg0nM3cWnWp17Ox-6AtCg"
                                                 target="_blank">
                                                 <i class="fab fa-youtube"></i>
                                         </a>
-                                </div>
-                                <div><a class="ps-1 footer__redes footer__redes--hover"
-                                                href="https://twitter.com/astrosmusica" target="_blank">
+                                        <a class="fs-5 footer__redes--hover" href="https://twitter.com/astrosmusica"
+                                                target="_blank">
                                                 <i class="fab fa-twitter"></i>
                                         </a>
                                 </div>

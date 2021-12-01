@@ -8047,6 +8047,47 @@ h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
     cursor: pointer;
     position: absolute; }
 
+@media screen and (max-width: 1024px) {
+  h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
+    background-color: #0e0d0d;
+    width: max-content;
+    text-align: center;
+    text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3; }
+  .titulo-fecha {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.692);
+    text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3; }
+  #contenedorFechas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    #contenedorFechas #fechas {
+      background-color: rgba(60, 27, 70, 0.466);
+      display: flex;
+      flex-direction: column;
+      height: 35.6rem;
+      width: 23.1rem;
+      margin-bottom: 2rem;
+      /* CUADRO FECHAS */ }
+    #contenedorFechas #fechas p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.349);
+      padding: 0.7rem;
+      position: relative; }
+    #contenedorFechas #fechas p:hover {
+      background-color: #0e0d0d;
+      color: white; }
+    #contenedorFechas #fechas p span {
+      right: 40%;
+      position: absolute; }
+    #contenedorFechas #fechas p strong {
+      right: 1rem;
+      cursor: pointer;
+      position: absolute; } }
+
 .gridSobrenos {
   height: 42rem;
   display: grid;
@@ -8111,6 +8152,170 @@ h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
     margin-left: 10rem;
     border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
 
+@media screen and (max-width: 1024px) {
+  .gridSobrenos {
+    height: max-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10rem 1fr;
+    grid-column-gap: 0rem;
+    grid-row-gap: 2rem;
+    grid-template-areas: "historia historia historia historia" "img1 img2 img3 im4" "integrantes integrantes integrantes integrantes";
+    /*-------------------------------------------------------------- GRID */ }
+    .gridSobrenos .titleSobre {
+      color: rgba(255, 255, 255, 0.692);
+      background-color: rgba(60, 27, 70, 0.466);
+      text-align: center;
+      letter-spacing: 0.1rem;
+      text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
+    .gridSobrenos .textoSobre {
+      color: #8d8b9b;
+      font-size: 1.1rem;
+      letter-spacing: 0.1rem;
+      background-image: url(https://jooinn.com/images/text-background-3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: #4c008244 outset 0.5rem; }
+    .gridSobrenos .historiaAstros {
+      grid-area: historia;
+      text-align: center;
+      line-height: 2rem; }
+    .gridSobrenos .integrantes {
+      grid-area: integrantes;
+      text-align: center;
+      line-height: 1.5rem; }
+    .gridSobrenos span {
+      background-color: black;
+      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    .gridSobrenos .imgClau {
+      grid-area: img1;
+      width: 10rem;
+      height: 8rem; }
+    .gridSobrenos .imgNico {
+      grid-area: img2;
+      width: 10rem;
+      height: 8rem;
+      margin: 0rem; }
+    .gridSobrenos .imgJoel {
+      grid-area: img3;
+      width: 10rem;
+      height: 8rem; }
+    .gridSobrenos .imgAndres {
+      grid-area: img4;
+      width: 10rem;
+      height: 8rem;
+      margin: 0rem; } }
+
+@media screen and (max-width: 731px) {
+  .gridSobrenos {
+    height: max-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 10rem 10rem;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+    grid-template-areas: "historia historia" "integrantes integrantes" "img1 img2" "img3 img4";
+    /*-------------------------------------------------------------- GRID */ }
+    .gridSobrenos .titleSobre {
+      color: rgba(255, 255, 255, 0.692);
+      background-color: rgba(60, 27, 70, 0.466);
+      text-align: center;
+      letter-spacing: 0.1rem;
+      text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
+    .gridSobrenos .textoSobre {
+      color: #8d8b9b;
+      font-size: 1.1rem;
+      letter-spacing: 0.1rem;
+      background-image: url(https://jooinn.com/images/text-background-3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: #4c008244 outset 0.5rem; }
+    .gridSobrenos .historiaAstros {
+      grid-area: historia;
+      text-align: justify;
+      line-height: 2rem; }
+    .gridSobrenos .integrantes {
+      grid-area: integrantes;
+      text-align: justify;
+      line-height: 1.5rem; }
+    .gridSobrenos span {
+      background-color: black;
+      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    .gridSobrenos .imgClau {
+      grid-area: img1;
+      width: 10rem;
+      height: 8rem; }
+    .gridSobrenos .imgNico {
+      grid-area: img2;
+      width: 10rem;
+      height: 8rem;
+      margin: 0rem; }
+    .gridSobrenos .imgJoel {
+      grid-area: img3;
+      width: 10rem;
+      height: 8rem; }
+    .gridSobrenos .imgAndres {
+      grid-area: img4;
+      width: 10rem;
+      height: 8rem;
+      margin: 0rem; } }
+
+@media screen and (max-width: 375px) {
+  .gridSobrenos {
+    height: max-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 10rem 10rem;
+    grid-column-gap: 0rem;
+    grid-template-areas: "historia historia" "integrantes integrantes" "img1 img2" "img3 img4";
+    /*-------------------------------------------------------------- GRID */ }
+    .gridSobrenos .titleSobre {
+      color: rgba(255, 255, 255, 0.692);
+      background-color: rgba(60, 27, 70, 0.466);
+      text-align: center;
+      letter-spacing: 0.1rem;
+      text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
+    .gridSobrenos .textoSobre {
+      color: #8d8b9b;
+      font-size: 1.1rem;
+      letter-spacing: 0.1rem;
+      background-image: url(https://jooinn.com/images/text-background-3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: #4c008244 outset 0.5rem; }
+    .gridSobrenos .historiaAstros {
+      grid-area: historia;
+      text-align: justify;
+      line-height: 2rem; }
+    .gridSobrenos .integrantes {
+      grid-area: integrantes;
+      text-align: justify;
+      line-height: 1.5rem; }
+    .gridSobrenos span {
+      background-color: black;
+      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    .gridSobrenos .imgClau {
+      grid-area: img1;
+      width: 10rem;
+      height: 8rem; }
+    .gridSobrenos .imgNico {
+      grid-area: img2;
+      width: 10rem;
+      height: 8rem;
+      margin: 0rem; }
+    .gridSobrenos .imgJoel {
+      grid-area: img3;
+      width: 10rem;
+      height: 8rem; }
+    .gridSobrenos .imgAndres {
+      grid-area: img4;
+      width: 10rem;
+      height: 8rem;
+      margin: 0rem; } }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8150,20 +8355,28 @@ body {
 /*------------------------------------------------- BODY */
 .titleIndex {
   font-family: 'Monoton', cursive;
+  text-align: center;
   font-weight: 400;
   font-size: 3rem;
   color: #ffffffa4;
+  background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
   letter-spacing: 0.5rem;
   text-shadow: 0 0 15px #FFF, -40px -40px 0px rgba(206, 89, 55, 0);
   background-size: 30rem; }
 
 /*---------------------------------------------- TITULOS HEADER */
 .navPrueba {
-  background-color: rgba(0, 0, 0, 0.94);
+  background-color: rgba(39, 37, 37, 0.911);
   width: fit-content;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  margin-bottom: 5rem; }
+  z-index: 10; }
+
+@media screen and (max-width: 1024px) {
+  .navPrueba {
+    position: relative;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.801); } }
 
 .nav__menu {
   letter-spacing: 0.1rem;
@@ -8178,7 +8391,7 @@ body {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: rgba(89, 48, 102, 0.822);
+  background-color: #ae17db;
   transform-origin: bottom right;
   transition: transform 0.30s ease-out; }
 
@@ -8189,31 +8402,37 @@ body {
 .nav__menu--activo {
   letter-spacing: 0.1rem;
   text-decoration: underline 3px !important;
-  color: rgba(89, 48, 102, 0.822) !important; }
+  color: #ae17db !important; }
+
+.nav__menu--footer {
+  letter-spacing: 0.1rem;
+  text-decoration: underline 3px !important; }
 
 a:link {
-  color: rgba(60, 27, 70, 0.466);
+  color: white;
   text-decoration: none; }
 
 a:visited {
-  color: rgba(129, 23, 190, 0.288); }
+  color: #a072bb; }
 
 a:hover {
-  color: rgba(89, 48, 102, 0.822); }
+  color: #ae17db; }
 
 /* -------------------------------------------NAV BAR */
 footer {
-  text-shadow: 3px 3px 3px #e74d4d;
   display: flex;
   background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
   background-size: 30rem; }
   footer h4, footer .h4 {
+    color: white;
     text-shadow: 0 0 15px #FFF, -40px -40px 0px rgba(206, 89, 55, 0); }
   footer .footer__redes a:link {
-    color: rgba(60, 27, 70, 0.466); }
+    color: white; }
   footer .footer__redes a:visited {
-    color: #00faed; }
+    color: white; }
   footer .footer__redes--hover a:hover {
     text-shadow: 0 0 15px #FFF, -40px -40px 0px rgba(206, 89, 55, 0); }
+  footer .footer__nav {
+    font-size: 1rem; }
 
 /* --------------------------------------------FOOTER */

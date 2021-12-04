@@ -19,7 +19,9 @@
 
 <body>
     <header>
-        <h1 class="titleIndex p-4 d-lg-none">ASTROS</h1> <!-------TITULO -->
+        <div>
+            <h1 class="titleIndex p-4 d-lg-none">ASTROS</h1> <!-------TITULO -->
+        </div>
         <nav class="navbar navbar-expand-lg navbar-dark navPrueba"><!-- NAV BAR -->
             <div class="container-fluid fixed-top navPrueba align-items-start">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,7 +33,7 @@
                         <img class="d-none d-lg-inline" src="./imagenes/logo.png" alt="astros logo" width="40" height="40">
                     </a>
                     <ul class="navbar-nav fs-5 me-3">
-                        <li class="nav-item ps-5 mt-2 mb-2 mt-lg-0 mb-lg-0 pe-lg-3 ps-lg-0">
+                        <li class="nav-item mb-2 mt-lg-0 mb-lg-0 pe-lg-3 ps-lg-0">
                             <a class="nav__menu--activo" aria-current="page" href="#">INICIO</a>
                         </li>
                         <li class="nav-item pe-3">
@@ -151,47 +153,49 @@
         </div>
     </section> <!-- FORMULARIO -->
     <footer>
-        <section class="container"> <!-- FOOTER NAV -->
-            <div class="d-flex flex-wrap fs-4 justify-content-evenly justify-content-lg-between footer__redes footer__redes--hover">
-                <div class="d-flex flex-wrap bg-gradient ms-lg-5 mt-1">
-                    <h4 class="fs-5">navegacion</h4>
-                    <ul class="footer__nav">
-                        <li class="nav-item mb-1">
-                            <a class="nav__menu--footer" aria-current="page" href="#">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav__menu" href="./views/musica.html">MÚSICA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav__menu" href="./views/galeria.html">GALERÍA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav__menu" href="./views/fechas.html">FECHAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav__menu" href="./views/sobrenosotros.html">SOBRE NOSOTROS</a>
-                        </li>
-                    </ul>
-                </div> <!-- FOOTER NAV -->
-                    <div class=" d-flex align-items-end">
-                        <h4 class="fs-5">© 2021 Copyright: Astros</h4>
-                    </div>
-                    <div class="d-lg-block mt-lg-5 me-lg-5"> <!-- REDES -->
-                        <h4 class="fs-4 ms-4">redes</h4>
-                    <a class="me-3 fs-5 footer__redes--hover" href="https://www.instagram.com/astrosmusica/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class=" me-3 fs-5 footer__redes--hover" href="https://www.youtube.com/channel/UCbcg0nM3cWnWp17Ox-6AtCg"
-                        target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a class="fs-5 footer__redes--hover" href="https://twitter.com/astrosmusica" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+        <section class="footer__grid"> <!-- FOOTER NAV -->
+                <div class="navegacion footer__nav footer__redes--hover footer__redes">
+                        <h4 class="fs-4">navegacion</h4>
+                        <ul class="fs-5">
+                                <li class="nav-item">
+                                        <a class="nav__menu text-decoration-underline" aria-current="page" href="#">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav__menu" href="./views/musica.html">MÚSICA</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav__menu" href="./views/galeria.html">GALERÍA</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav__menu" href="./views/fechas.html">FECHAS</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav__menu" href="./views/sobrenosotros.html">SOBRE NOSOTROS</a>
+                                </li>
+                        </ul>
                 </div>
-            </div> <!-- REDES -->
+                <div class="copyr">
+                        <img class="imgnone" src="/imagenes/logo.png" height="150" width="150" alt="logo astros">
+                        <h4 class="fs-5">© 2021 Copyright: Astros</h4>
+                </div>
+                <div class="redes footer__redes footer__redes--hover">
+                        <div>
+                                <h4 class="fs-2">redes</h4>
+                        </div>
+                        <div>
+                                <a href="https://www.instagram.com/astrosmusica/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCbcg0nM3cWnWp17Ox-6AtCg" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://twitter.com/astrosmusica" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                </a>
+                        </div>
+                </div>
         </section>
-    </footer> <!-- FOOTER -->
+</footer> <!-- FOOTER -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

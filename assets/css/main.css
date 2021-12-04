@@ -7907,6 +7907,8 @@ iframe {
   border: rgba(178, 149, 206, 0.363) ridge 0.2rem; }
 
 .galeria {
+  height: 44rem;
+  align-content: space-around;
   position: relative;
   display: grid;
   justify-content: center;
@@ -8002,50 +8004,95 @@ iframe {
     z-index: 1;
     text-shadow: 0 0 15px #FFF, -40px -40px 0px rgba(206, 89, 55, 0); }
 
-h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
-  background-color: #0e0d0d;
-  width: 51.1rem;
-  padding: 0.7rem;
-  text-align: center;
-  text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3; }
-
-.titulo-fecha {
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 0.5rem;
-  color: rgba(255, 255, 255, 0.692);
-  text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3; }
-
-#contenedorFechas {
-  margin-top: 0.1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; }
-  #contenedorFechas #fechas {
-    background-color: rgba(60, 27, 70, 0.466);
+@media screen and (max-width: 1300px) {
+  h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
+    background-color: #0e0d0d;
+    width: 51.1rem;
+    padding: 0.7rem;
+    text-align: center;
+    text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3; }
+  .titulo-fecha {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.692);
+    text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3; }
+  #contenedorFechas {
+    margin-top: 0.1rem;
     display: flex;
     flex-direction: column;
-    height: 36.6rem;
-    width: 51.1rem;
-    margin-bottom: 2rem;
-    /* CUADRO FECHAS */ }
-  #contenedorFechas #fechas p {
-    margin: 0;
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.349);
-    padding: 0.7rem;
-    position: relative; }
-  #contenedorFechas #fechas p:hover {
+    justify-content: space-evenly;
+    align-items: center; }
+    #contenedorFechas #fechas {
+      background-color: rgba(60, 27, 70, 0.466);
+      display: flex;
+      flex-direction: column;
+      height: 36.6rem;
+      width: 51.1rem;
+      margin-bottom: 2rem;
+      /* CUADRO FECHAS */ }
+    #contenedorFechas #fechas p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.349);
+      padding: 0.7rem;
+      position: relative; }
+    #contenedorFechas #fechas p:hover {
+      background-color: #0e0d0d;
+      color: white; }
+    #contenedorFechas #fechas p span {
+      right: 46%;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0); }
+    #contenedorFechas #fechas p strong {
+      right: 1rem;
+      cursor: pointer;
+      position: absolute; } }
+
+@media screen and (min-width: 1301px) {
+  h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
     background-color: #0e0d0d;
-    color: white; }
-  #contenedorFechas #fechas p span {
-    right: 46%;
-    position: absolute; }
-  #contenedorFechas #fechas p strong {
-    right: 1rem;
-    cursor: pointer;
-    position: absolute; }
+    width: 61.1rem;
+    padding: 0.7rem;
+    text-align: center;
+    text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3; }
+  .titulo-fecha {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.692);
+    text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3; }
+  #contenedorFechas {
+    margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    #contenedorFechas #fechas {
+      background-color: rgba(60, 27, 70, 0.466);
+      display: flex;
+      flex-direction: column;
+      height: 36.6rem;
+      width: 61.1rem;
+      margin-bottom: 2rem;
+      /* CUADRO FECHAS */ }
+    #contenedorFechas #fechas p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.349);
+      padding: 0.7rem;
+      position: relative; }
+    #contenedorFechas #fechas p:hover {
+      background-color: #0e0d0d;
+      color: white; }
+    #contenedorFechas #fechas p span {
+      right: 46%;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0); }
+    #contenedorFechas #fechas p strong {
+      right: 1rem;
+      cursor: pointer;
+      position: absolute; } }
 
 @media screen and (max-width: 1024px) {
   h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
@@ -8067,7 +8114,7 @@ h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
       background-color: rgba(60, 27, 70, 0.466);
       display: flex;
       flex-direction: column;
-      height: 35.6rem;
+      height: 36.6rem;
       width: 23.1rem;
       margin-bottom: 2rem;
       /* CUADRO FECHAS */ }
@@ -8088,233 +8135,418 @@ h2.fuente-terciaria.chica, .fuente-terciaria.chica.h2 {
       cursor: pointer;
       position: absolute; } }
 
-.gridSobrenos {
-  height: 42rem;
-  display: grid;
-  grid-template-columns: 1fr 20rem 1fr;
-  grid-template-rows: 10rem 10rem 10rem 10rem;
-  grid-column-gap: 4rem;
-  grid-template-areas: "historia img1 integrantes" "historia img2 integrantes" "historia img3 integrantes" "historia img4 integrantes";
-  margin-top: 3.5rem;
-  margin-bottom: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  /*-------------------------------------------------------------- GRID */ }
-  .gridSobrenos .titleSobre {
+@media screen and (max-width: 2000px) {
+  .gridSobrenos {
+    height: 71rem;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-template-areas: "historia imagenes integrantes";
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  /*-------------------------------------------------------------- GRID */
+  .titleSobre {
     color: rgba(255, 255, 255, 0.692);
     background-color: rgba(60, 27, 70, 0.466);
     text-align: center;
     letter-spacing: 0.1rem;
     text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
-  .gridSobrenos .textoSobre {
+  .textoSobre {
+    height: 65rem;
     color: #8d8b9b;
+    letter-spacing: 0.2rem;
+    background-image: url(https://jooinn.com/images/text-background-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #4c008244 outset 0.5rem; }
+  .historiaAstros {
+    font-size: 1.7rem;
+    grid-area: historia;
+    text-align: justify;
+    line-height: 3rem; }
+  .imagenes {
+    grid-area: imagenes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .imagenes .imgClau {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgJoel {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgNico {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      margin-left: 8rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+    .imagenes .imgAndres {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      margin-left: 8rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+  .integrantes {
+    font-size: 1.5rem;
+    grid-area: integrantes;
+    text-align: justify;
+    line-height: 2.5rem; }
+  span {
+    background-color: black;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); } }
+
+@media screen and (max-width: 1781px) {
+  .gridSobrenos {
+    height: 93rem;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-template-areas: "historia imagenes integrantes";
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  /*-------------------------------------------------------------- GRID */
+  .titleSobre {
+    color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(60, 27, 70, 0.466);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
+  .textoSobre {
+    height: 87rem;
+    color: #8d8b9b;
+    letter-spacing: 0.2rem;
+    background-image: url(https://jooinn.com/images/text-background-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #4c008244 outset 0.5rem; }
+  .historiaAstros {
+    font-size: 1.7rem;
+    grid-area: historia;
+    text-align: justify;
+    line-height: 3rem; }
+  .imagenes {
+    grid-area: imagenes;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .imagenes .imgClau {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgJoel {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgNico {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      margin-left: 8rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+    .imagenes .imgAndres {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      margin-left: 8rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+  .integrantes {
+    font-size: 1.5rem;
+    grid-area: integrantes;
+    text-align: justify;
+    line-height: 2.5rem; }
+  span {
+    background-color: black;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); } }
+
+@media screen and (max-width: 1400px) {
+  .gridSobrenos {
+    height: 99rem;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-template-areas: "historia imagenes integrantes";
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  /*-------------------------------------------------------------- GRID */
+  .titleSobre {
+    color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(60, 27, 70, 0.466);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
+  .textoSobre {
+    height: 92rem;
+    color: #8d8b9b;
+    letter-spacing: 0.2rem;
+    background-image: url(https://jooinn.com/images/text-background-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #4c008244 outset 0.5rem; }
+  .historiaAstros {
+    font-size: 1.7rem;
+    grid-area: historia;
+    text-align: justify;
+    line-height: 3rem; }
+  .imagenes {
+    grid-area: imagenes;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .imagenes .imgClau {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgJoel {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgNico {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      margin-left: 8rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+    .imagenes .imgAndres {
+      width: 18rem;
+      height: 15rem;
+      border-radius: 1.1rem;
+      margin-left: 8rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+  .integrantes {
+    font-size: 1.5rem;
+    grid-area: integrantes;
+    text-align: justify;
+    line-height: 2.5rem; }
+  span {
+    background-color: black;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); } }
+
+@media screen and (max-width: 1280px) {
+  .gridSobrenos {
+    height: 47rem;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 24rem 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-template-areas: "historia imagenes integrantes";
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  /*-------------------------------------------------------------- GRID */
+  .titleSobre {
+    color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(60, 27, 70, 0.466);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
+  .textoSobre {
+    color: #8d8b9b;
+    height: 43rem;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     background-image: url(https://jooinn.com/images/text-background-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: #4c008244 outset 0.5rem; }
-  .gridSobrenos .historiaAstros {
+  .historiaAstros {
     grid-area: historia;
     text-align: justify;
     line-height: 2rem; }
-  .gridSobrenos .integrantes {
+  .imagenes {
+    grid-area: imagenes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    .imagenes .imgClau {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgJoel {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgNico {
+      width: 11rem;
+      height: 10rem;
+      margin-left: 5rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+    .imagenes .imgAndres {
+      width: 11rem;
+      height: 10rem;
+      margin-left: 5rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+  .integrantes {
     grid-area: integrantes;
     text-align: justify;
-    line-height: 1.5rem; }
-  .gridSobrenos span {
+    line-height: 1.5rem;
+    overflow: hidden; }
+  span {
     background-color: black;
-    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  .gridSobrenos .imgClau {
-    grid-area: img1;
-    width: 11rem;
-    height: 10rem;
-    border-radius: 1.1rem;
-    border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
-  .gridSobrenos .imgJoel {
-    grid-area: img1;
-    width: 11rem;
-    height: 10rem;
-    border-radius: 1.1rem;
-    border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
-  .gridSobrenos .imgNico {
-    grid-area: img2;
-    width: 11rem;
-    height: 10rem;
-    border-radius: 1.1rem;
-    margin-left: 10rem;
-    border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
-  .gridSobrenos .imgAndres {
-    grid-area: img2;
-    width: 11rem;
-    height: 10rem;
-    border-radius: 1.1rem;
-    margin-left: 10rem;
-    border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); } }
 
 @media screen and (max-width: 1024px) {
   .gridSobrenos {
     height: max-content;
     width: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 10rem 1fr;
-    grid-column-gap: 0rem;
-    grid-row-gap: 2rem;
-    grid-template-areas: "historia historia historia historia" "img1 img2 img3 im4" "integrantes integrantes integrantes integrantes";
-    /*-------------------------------------------------------------- GRID */ }
-    .gridSobrenos .titleSobre {
-      color: rgba(255, 255, 255, 0.692);
-      background-color: rgba(60, 27, 70, 0.466);
-      text-align: center;
-      letter-spacing: 0.1rem;
-      text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
-    .gridSobrenos .textoSobre {
-      color: #8d8b9b;
-      font-size: 1.1rem;
-      letter-spacing: 0.1rem;
-      background-image: url(https://jooinn.com/images/text-background-3.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: #4c008244 outset 0.5rem; }
-    .gridSobrenos .historiaAstros {
-      grid-area: historia;
-      text-align: center;
-      line-height: 2rem; }
-    .gridSobrenos .integrantes {
-      grid-area: integrantes;
-      text-align: center;
-      line-height: 1.5rem; }
-    .gridSobrenos span {
-      background-color: black;
-      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
-    .gridSobrenos .imgClau {
-      grid-area: img1;
-      width: 10rem;
-      height: 8rem; }
-    .gridSobrenos .imgNico {
-      grid-area: img2;
-      width: 10rem;
-      height: 8rem;
-      margin: 0rem; }
-    .gridSobrenos .imgJoel {
-      grid-area: img3;
-      width: 10rem;
-      height: 8rem; }
-    .gridSobrenos .imgAndres {
-      grid-area: img4;
-      width: 10rem;
-      height: 8rem;
-      margin: 0rem; } }
-
-@media screen and (max-width: 731px) {
-  .gridSobrenos {
-    height: max-content;
-    width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 10rem 10rem;
     grid-column-gap: 4rem;
     grid-row-gap: 2rem;
-    grid-template-areas: "historia historia" "integrantes integrantes" "img1 img2" "img3 img4";
-    /*-------------------------------------------------------------- GRID */ }
-    .gridSobrenos .titleSobre {
-      color: rgba(255, 255, 255, 0.692);
-      background-color: rgba(60, 27, 70, 0.466);
-      text-align: center;
-      letter-spacing: 0.1rem;
-      text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
-    .gridSobrenos .textoSobre {
-      color: #8d8b9b;
-      font-size: 1.1rem;
-      letter-spacing: 0.1rem;
-      background-image: url(https://jooinn.com/images/text-background-3.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: #4c008244 outset 0.5rem; }
-    .gridSobrenos .historiaAstros {
-      grid-area: historia;
-      text-align: justify;
-      line-height: 2rem; }
-    .gridSobrenos .integrantes {
-      grid-area: integrantes;
-      text-align: justify;
-      line-height: 1.5rem; }
-    .gridSobrenos span {
-      background-color: black;
-      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
-    .gridSobrenos .imgClau {
-      grid-area: img1;
-      width: 10rem;
-      height: 8rem; }
-    .gridSobrenos .imgNico {
-      grid-area: img2;
-      width: 10rem;
-      height: 8rem;
-      margin: 0rem; }
-    .gridSobrenos .imgJoel {
-      grid-area: img3;
-      width: 10rem;
-      height: 8rem; }
-    .gridSobrenos .imgAndres {
-      grid-area: img4;
-      width: 10rem;
-      height: 8rem;
-      margin: 0rem; } }
+    grid-template-areas: "historia" "imagenes" "integrantes"; }
+  /*-------------------------------------------------------------- GRID */
+  .titleSobre {
+    color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(60, 27, 70, 0.466);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
+  .textoSobre {
+    height: fit-content;
+    color: #8d8b9b;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    background-image: url(https://jooinn.com/images/text-background-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #4c008244 outset 0.5rem; }
+  .historiaAstros {
+    grid-area: historia;
+    text-align: center;
+    line-height: 2rem; }
+  .imagenes {
+    grid-area: imagenes;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .imagenes .imgClau {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgJoel {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgNico {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      margin-left: 0rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+    .imagenes .imgAndres {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      margin-left: 0rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+  .integrantes {
+    grid-area: integrantes;
+    text-align: center;
+    line-height: 1.6rem;
+    margin-top: 2rem; }
+  span {
+    background-color: black;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 769px) {
   .gridSobrenos {
     height: max-content;
     width: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 10rem 10rem;
-    grid-column-gap: 0rem;
-    grid-template-areas: "historia historia" "integrantes integrantes" "img1 img2" "img3 img4";
-    /*-------------------------------------------------------------- GRID */ }
-    .gridSobrenos .titleSobre {
-      color: rgba(255, 255, 255, 0.692);
-      background-color: rgba(60, 27, 70, 0.466);
-      text-align: center;
-      letter-spacing: 0.1rem;
-      text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
-    .gridSobrenos .textoSobre {
-      color: #8d8b9b;
-      font-size: 1.1rem;
-      letter-spacing: 0.1rem;
-      background-image: url(https://jooinn.com/images/text-background-3.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: #4c008244 outset 0.5rem; }
-    .gridSobrenos .historiaAstros {
-      grid-area: historia;
-      text-align: justify;
-      line-height: 2rem; }
-    .gridSobrenos .integrantes {
-      grid-area: integrantes;
-      text-align: justify;
-      line-height: 1.5rem; }
-    .gridSobrenos span {
-      background-color: black;
-      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
-    .gridSobrenos .imgClau {
-      grid-area: img1;
-      width: 10rem;
-      height: 8rem; }
-    .gridSobrenos .imgNico {
-      grid-area: img2;
-      width: 10rem;
-      height: 8rem;
-      margin: 0rem; }
-    .gridSobrenos .imgJoel {
-      grid-area: img3;
-      width: 10rem;
-      height: 8rem; }
-    .gridSobrenos .imgAndres {
-      grid-area: img4;
-      width: 10rem;
-      height: 8rem;
-      margin: 0rem; } }
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 24rem;
+    grid-row-gap: 0rem;
+    grid-template-areas: "historia" "integrantes" "imagenes"; }
+  /*-------------------------------------------------------------- GRID */
+  .titleSobre {
+    color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(60, 27, 70, 0.466);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-shadow: -4px 4px rgba(179, 179, 179, 0.4), 2px -2px rgba(77, 77, 77, 0.7); }
+  .textoSobre {
+    height: fit-content;
+    color: #8d8b9b;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    background-image: url(https://jooinn.com/images/text-background-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #4c008244 outset 0.5rem; }
+  .historiaAstros {
+    grid-area: historia;
+    text-align: justify;
+    line-height: 2rem; }
+  .integrantes {
+    grid-area: integrantes;
+    text-align: justify;
+    line-height: 1.5rem; }
+  span {
+    background-color: black;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  .imagenes {
+    grid-area: imagenes;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around; }
+    .imagenes .imgClau {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgJoel {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      border: rgba(76, 0, 130, 0.267) inset 0.3rem; }
+    .imagenes .imgNico {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      margin-left: 0rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; }
+    .imagenes .imgAndres {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 1.1rem;
+      margin-left: 0rem;
+      border: rgba(76, 0, 130, 0.267) outset 0.3rem; } }
+
+html, body {
+  overflow-x: hidden; }
+
+body {
+  position: relative; }
 
 * {
   box-sizing: border-box;
@@ -8357,7 +8589,7 @@ body {
   font-family: 'Monoton', cursive;
   text-align: center;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #ffffffa4;
   background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
   letter-spacing: 0.5rem;
@@ -8372,18 +8604,18 @@ body {
   border-bottom-right-radius: 1rem;
   z-index: 10; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
   .navPrueba {
     position: relative;
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.801); } }
 
-.nav__menu {
+nav .nav__menu {
   letter-spacing: 0.1rem;
   display: inline-block;
   position: relative; }
 
-.nav__menu--subrrayado:after {
+nav .nav__menu--subrrayado:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -8391,48 +8623,121 @@ body {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #ae17db;
+  background-color: #7b139b;
   transform-origin: bottom right;
   transition: transform 0.30s ease-out; }
 
-.nav__menu--subrrayado:hover:after {
+nav .nav__menu--subrrayado:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left; }
 
-.nav__menu--activo {
+nav .nav__menu--activo {
   letter-spacing: 0.1rem;
   text-decoration: underline 3px !important;
-  color: #ae17db !important; }
+  color: #7b139b !important; }
 
-.nav__menu--footer {
-  letter-spacing: 0.1rem;
-  text-decoration: underline 3px !important; }
-
-a:link {
+nav a:link {
   color: white;
   text-decoration: none; }
 
-a:visited {
-  color: #a072bb; }
+nav a:visited {
+  color: #ac9bb6; }
 
-a:hover {
-  color: #ae17db; }
+nav a:hover {
+  color: #7b139b; }
 
 /* -------------------------------------------NAV BAR */
-footer {
-  display: flex;
+footer .footer__grid {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "navegacion copyr redes";
   background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
   background-size: 30rem; }
-  footer h4, footer .h4 {
+  footer .footer__grid .navegacion {
+    list-style: none;
+    margin-left: 4rem;
+    padding: 1rem;
+    width: fit-content;
+    display: flex;
+    grid-area: navegacion; }
+    footer .footer__grid .navegacion ul, footer .footer__grid .navegacion li {
+      list-style: none; }
+  footer .footer__grid .copyr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: copyr; }
+  footer .footer__grid .redes {
+    font-size: 1.9rem;
+    letter-spacing: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: redes; }
+  footer .footer__grid h4, footer .footer__grid .h4 {
     color: white;
     text-shadow: 0 0 15px #FFF, -40px -40px 0px rgba(206, 89, 55, 0); }
-  footer .footer__redes a:link {
+  footer .footer__grid .footer__redes a:link {
+    color: white;
+    text-decoration: none; }
+  footer .footer__grid .footer__redes a:visited {
     color: white; }
-  footer .footer__redes a:visited {
-    color: white; }
-  footer .footer__redes--hover a:hover {
+  footer .footer__grid .footer__redes--hover a:hover {
     text-shadow: 0 0 15px #FFF, -40px -40px 0px rgba(206, 89, 55, 0); }
-  footer .footer__nav {
+  footer .footer__grid .footer__nav {
     font-size: 1rem; }
 
 /* --------------------------------------------FOOTER */
+@media screen and (max-width: 769px) {
+  footer {
+    height: fit-content; }
+    footer .footer__grid {
+      height: 15rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "navegacion redes" "copyr copyr";
+      background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
+      background-size: 30rem; }
+      footer .footer__grid .navegacion {
+        list-style: none;
+        margin-left: 0rem;
+        padding: 0rem;
+        width: fit-content;
+        display: flex;
+        grid-area: navegacion; }
+        footer .footer__grid .navegacion ul, footer .footer__grid .navegacion li {
+          list-style: none; }
+      footer .footer__grid .copyr {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 1rem;
+        grid-area: copyr; }
+      footer .footer__grid .imgnone {
+        display: none; }
+      footer .footer__grid .redes {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: redes; }
+      footer .footer__grid h4, footer .footer__grid .h4 {
+        color: white;
+        text-shadow: 0 0 15px #FFF, -40px -40px 0px rgba(206, 89, 55, 0); }
+      footer .footer__grid .footer__redes a:link {
+        color: white;
+        text-decoration: none; }
+      footer .footer__grid .footer__redes a:visited {
+        color: white; }
+      footer .footer__grid .footer__redes--hover a:hover {
+        text-shadow: 0 0 15px #FFF, -40px -40px 0px rgba(206, 89, 55, 0); }
+      footer .footer__grid .footer__nav {
+        font-size: 1rem; } }

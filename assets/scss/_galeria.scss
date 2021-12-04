@@ -1,6 +1,9 @@
 @import "variables";
 
+
 .galeria{
+    height: 44rem;
+    align-content: space-around;
     position: relative;
     display: grid;
     justify-content: center;
@@ -38,3 +41,5 @@
             text-shadow: $text-shadow2;
         }                           /* TEXTO ESCONDIDO */
 }
+
+

@@ -1,22 +1,188 @@
 @import "variables";
 
+@media screen and (max-width: 2000px) {
+
+    .gridSobrenos{
+        height: 71rem;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 4rem;
+        grid-template-areas:
+        "historia imagenes integrantes"
+        ;
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
+        /*-------------------------------------------------------------- GRID */
+            .titleSobre{
+                color: $color-texto;
+                background-color: $color-violeta;
+                text-align: center;
+                letter-spacing: 0.1rem;
+                text-shadow: $text-shadow;
+            }
+    
+            .textoSobre{
+                height: 65rem;
+                color: rgb(141, 139, 155);
+                letter-spacing: 0.2rem;
+                background-image: url(https://jooinn.com/images/text-background-3.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                border: #4c008244 outset 0.5rem;
+            }
+    
+            .historiaAstros{
+                font-size: 1.7rem;
+                grid-area: historia;
+                text-align:justify;
+                line-height: 3rem;
+            }
+    
+            .imagenes{
+                grid-area: imagenes;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @each $img1 in imgClau, imgJoel,{
+                    .#{$img1}{
+                        width: 18rem;
+                        height: 15rem;
+                        border-radius: 1.1rem;
+                        border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+                    }
+                }
+                
+                @each $img2 in imgNico, imgAndres,{
+                    .#{$img2}{
+                        width: 18rem;
+                        height: 15rem;
+                        border-radius: 1.1rem;
+                        margin-left: 8rem;
+                        border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+                    }
+                }
+            }
+    
+            .integrantes{
+                font-size: 1.5rem;
+                grid-area: integrantes;
+                text-align: justify;
+                line-height: 2.5rem;
+            }
+    
+            span{
+                background-color: black;
+                text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+            }
+
+}
+
+
+@media screen and (max-width: 1781px) {
+
+    .gridSobrenos{
+        height: 93rem;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 4rem;
+        grid-template-areas:
+        "historia imagenes integrantes"
+        ;
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
+        /*-------------------------------------------------------------- GRID */
+            .titleSobre{
+                color: $color-texto;
+                background-color: $color-violeta;
+                text-align: center;
+                letter-spacing: 0.1rem;
+                text-shadow: $text-shadow;
+            }
+    
+            .textoSobre{
+                height: 87rem;
+                color: rgb(141, 139, 155);
+                letter-spacing: 0.2rem;
+                background-image: url(https://jooinn.com/images/text-background-3.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                border: #4c008244 outset 0.5rem;
+            }
+    
+            .historiaAstros{
+                font-size: 1.7rem;
+                grid-area: historia;
+                text-align:justify;
+                line-height: 3rem;
+            }
+    
+            .imagenes{
+                grid-area: imagenes;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                @each $img1 in imgClau, imgJoel,{
+                    .#{$img1}{
+                        width: 18rem;
+                        height: 15rem;
+                        border-radius: 1.1rem;
+                        border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+                    }
+                }
+                
+                @each $img2 in imgNico, imgAndres,{
+                    .#{$img2}{
+                        width: 18rem;
+                        height: 15rem;
+                        border-radius: 1.1rem;
+                        margin-left: 8rem;
+                        border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+                    }
+                }
+            }
+    
+            .integrantes{
+                font-size: 1.5rem;
+                grid-area: integrantes;
+                text-align: justify;
+                line-height: 2.5rem;
+            }
+    
+            span{
+                background-color: black;
+                text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+            }
+
+}
+
+
+
+@media screen and (max-width: 1400px) {
 .gridSobrenos{
-    height: 42rem;
+    height: 99rem;
+    width: auto;
     display: grid;
-    grid-template-columns: 1fr 20rem 1fr;
-    grid-template-rows: 10rem 10rem 10rem 10rem;
-    grid-column-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
     grid-template-areas:
-    "historia img1 integrantes"
-    "historia img2 integrantes"
-    "historia img3 integrantes"
-    "historia img4 integrantes"
+    "historia imagenes integrantes"
     ;
     margin-top: 3.5rem;
     margin-bottom: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
-/*-------------------------------------------------------------- GRID */
+    }
+    /*-------------------------------------------------------------- GRID */
         .titleSobre{
             color: $color-texto;
             background-color: $color-violeta;
@@ -26,9 +192,9 @@
         }
 
         .textoSobre{
+            height: 92rem;
             color: rgb(141, 139, 155);
-            font-size: 1.1rem;
-            letter-spacing: 0.1rem;
+            letter-spacing: 0.2rem;
             background-image: url(https://jooinn.com/images/text-background-3.jpg);
             background-repeat: no-repeat;
             background-size:cover;
@@ -36,15 +202,42 @@
         }
 
         .historiaAstros{
+            font-size: 1.7rem;
             grid-area: historia;
             text-align:justify;
-            line-height: 2rem;
+            line-height: 3rem;
+        }
+
+        .imagenes{
+            grid-area: imagenes;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @each $img1 in imgClau, imgJoel,{
+                .#{$img1}{
+                    width: 18rem;
+                    height: 15rem;
+                    border-radius: 1.1rem;
+                    border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+                }
+            }
+            
+            @each $img2 in imgNico, imgAndres,{
+                .#{$img2}{
+                    width: 18rem;
+                    height: 15rem;
+                    border-radius: 1.1rem;
+                    margin-left: 8rem;
+                    border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+                }
+            }
         }
 
         .integrantes{
+            font-size: 1.5rem;
             grid-area: integrantes;
             text-align: justify;
-            line-height: 1.5rem;
+            line-height: 2.5rem;
         }
 
         span{
@@ -52,53 +245,38 @@
             text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
         }
 
-        @each $img1 in imgClau, imgJoel,{
-            .#{$img1}{
-                grid-area: img1;
-                width: 11rem;
-                height: 10rem;
-                border-radius: 1.1rem;
-                border: rgba(76, 0, 130, 0.267) inset 0.3rem;
-            }
-        }
-        
-        @each $img2 in imgNico, imgAndres,{
-            .#{$img2}{
-                grid-area: img2;
-                width: 11rem;
-                height: 10rem;
-                border-radius: 1.1rem;
-                margin-left: 10rem;
-                border: rgba(76, 0, 130, 0.267) outset 0.3rem;
-            }
-        }
+
 }
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1280px) {
+
     .gridSobrenos{
-        height: max-content;
-        width:fit-content;
+        height: 47rem;
+        width: fit-content;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 10rem 1fr;
-        grid-column-gap: 0rem;
-        grid-row-gap: 2rem;
+        grid-template-columns: 24rem 1fr 1fr;
+        grid-column-gap: 2rem;
         grid-template-areas:
-        "historia historia historia historia"
-        "img1 img2 img3 im4"
-        "integrantes integrantes integrantes integrantes"
+        "historia imagenes integrantes"
         ;
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
     /*-------------------------------------------------------------- GRID */
-            .titleSobre{
-                color: $color-texto;
-                background-color: $color-violeta;
-                text-align: center;
-                letter-spacing: 0.1rem;
-                text-shadow: $text-shadow;
-            }
+    .titleSobre{
+        color: $color-texto;
+        background-color: $color-violeta;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        text-shadow: $text-shadow;
+    }
     
             .textoSobre{
                 color: rgb(141, 139, 155);
+                height: 43rem;
                 font-size: 1.1rem;
                 letter-spacing: 0.1rem;
                 background-image: url(https://jooinn.com/images/text-background-3.jpg);
@@ -106,69 +284,157 @@
                 background-size:cover;
                 border: #4c008244 outset 0.5rem;
             }
+
+                .historiaAstros{
+                    grid-area: historia;
+                    text-align:justify;
+                    line-height: 2rem;
+                }
+
+                .imagenes{
+                    grid-area: imagenes;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    @each $img1 in imgClau, imgJoel,{
+                        .#{$img1}{
+                            width: 11rem;
+                            height: 10rem;
+                            border-radius: 1.1rem;
+                            border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+                        }
+                    }
+                    
+                    @each $img2 in imgNico, imgAndres,{
+                        .#{$img2}{
+                            width: 11rem;
+                            height: 10rem;
+                            margin-left: 5rem;
+                            border-radius: 1.1rem;
+                            border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+                        }
+                    }
+                }
+
+                .integrantes{
+                    grid-area: integrantes;
+                    text-align: justify;
+                    line-height: 1.5rem;
+                    overflow: hidden;
+                }
+
+            span{
+                background-color: black;
+                text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+            }
     
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .gridSobrenos{
+        height: max-content;
+        width:fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 10rem 1fr;
+        grid-column-gap: 4rem;
+        grid-row-gap: 2rem;
+        grid-template-areas:
+        "historia"
+        "imagenes"
+        "integrantes"
+        ;
+        }
+/*-------------------------------------------------------------- GRID */
+            .titleSobre{
+                color: $color-texto;
+                background-color: $color-violeta;
+                text-align: center;
+                letter-spacing: 0.1rem;
+                text-shadow: $text-shadow;
+            }
+
+            .textoSobre{
+                height: fit-content;
+                color: rgb(141, 139, 155);
+                font-size: 1.4rem;
+                letter-spacing: 0.1rem;
+                background-image: url(https://jooinn.com/images/text-background-3.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                border: #4c008244 outset 0.5rem;
+            }
+
             .historiaAstros{
                 grid-area: historia;
                 text-align:center;
                 line-height: 2rem;
             }
-    
+
+            .imagenes{
+                grid-area: imagenes;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                @each $img1 in imgClau, imgJoel,{
+                    .#{$img1}{
+                        width: 11rem;
+                        height: 10rem;
+                        border-radius: 1.1rem;
+                        border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+                    }
+                }
+
+                @each $img2 in imgNico, imgAndres,{
+                    .#{$img2}{
+                        width: 11rem;
+                        height: 10rem;
+                        border-radius: 1.1rem;
+                        margin-left: 0rem;
+                        border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+                    }
+                }                
+            }
+
             .integrantes{
                 grid-area: integrantes;
                 text-align: center;
-                line-height: 1.5rem;
+                line-height: 1.6rem;
+                margin-top: 2rem;
             }
-    
+
             span{
                 background-color: black;
                 text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
             }
-    
-
-            .imgClau{
-                grid-area: img1;
-                width: 10rem;
-                height: 8rem;
-            }
-
-            .imgNico{
-                grid-area: img2;
-                width: 10rem;
-                height: 8rem;
-                margin: 0rem;
-            }
-
-            .imgJoel{
-                grid-area: img3;
-                width: 10rem;
-                height: 8rem;
-            }
-
-            .imgAndres{
-                grid-area: img4;
-                width: 10rem;
-                height: 8rem;
-                margin: 0rem;
-            }
 
 }
-}
 
-@media screen and (max-width: 731px) {
+
+
+
+
+@media screen and (max-width: 769px) {
+
     .gridSobrenos{
         height: max-content;
         width:fit-content;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 10rem 10rem;
-        grid-column-gap: 4rem;
-        grid-row-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 24rem;
+        grid-row-gap: 0rem;
         grid-template-areas:
-        "historia historia"
-        "integrantes integrantes"
-        "img1 img2"
-        "img3 img4"
+        "historia"
+        "integrantes"
+        "imagenes"
         ;
+        }
     /*-------------------------------------------------------------- GRID */
             .titleSobre{
                 color: $color-texto;
@@ -179,14 +445,16 @@
             }
     
             .textoSobre{
+                height: fit-content;
                 color: rgb(141, 139, 155);
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 letter-spacing: 0.1rem;
                 background-image: url(https://jooinn.com/images/text-background-3.jpg);
                 background-repeat: no-repeat;
                 background-size:cover;
                 border: #4c008244 outset 0.5rem;
             }
+            
     
             .historiaAstros{
                 grid-area: historia;
@@ -205,115 +473,42 @@
                 text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
             }
 
-            .imgClau{
-                grid-area: img1;
-                width: 10rem;
-                height: 8rem;
+            .imagenes{
+                grid-area: imagenes;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: space-around;
+                @each $img1 in imgClau, imgJoel,{
+                    .#{$img1}{
+                        width: 11rem;
+                        height: 10rem;
+                        border-radius: 1.1rem;
+                        border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+                    }
+                }
+                
+                @each $img2 in imgNico, imgAndres,{
+                    .#{$img2}{
+                        width: 11rem;
+                        height: 10rem;
+                        border-radius: 1.1rem;
+                        margin-left: 0rem;
+                        border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+                    }
+                }                
             }
 
-            .imgNico{
-                grid-area: img2;
-                width: 10rem;
-                height: 8rem;
-                margin: 0rem;
-            }
 
-            .imgJoel{
-                grid-area: img3;
-                width: 10rem;
-                height: 8rem;
-            }
 
-            .imgAndres{
-                grid-area: img4;
-                width: 10rem;
-                height: 8rem;
-                margin: 0rem;
-            }
 
-    
 }
-}
 
-@media screen and (max-width: 375px) {
-    .gridSobrenos{
-        height: max-content;
-        width:fit-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 10rem 10rem;
-        grid-column-gap: 0rem;
-        grid-template-areas:
-        "historia historia"
-        "integrantes integrantes"
-        "img1 img2"
-        "img3 img4"
-        ;
-    /*-------------------------------------------------------------- GRID */
-            .titleSobre{
-                color: $color-texto;
-                background-color: $color-violeta;
-                text-align: center;
-                letter-spacing: 0.1rem;
-                text-shadow: $text-shadow;
-            }
-    
-            .textoSobre{
-                color: rgb(141, 139, 155);
-                font-size: 1.1rem;
-                letter-spacing: 0.1rem;
-                background-image: url(https://jooinn.com/images/text-background-3.jpg);
-                background-repeat: no-repeat;
-                background-size:cover;
-                border: #4c008244 outset 0.5rem;
-            }
-    
-            .historiaAstros{
-                grid-area: historia;
-                text-align:justify;
-                line-height: 2rem;
-            }
-    
-            .integrantes{
-                grid-area: integrantes;
-                text-align: justify;
-                line-height: 1.5rem;
-            }
-    
-            span{
-                background-color: black;
-                text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-            }
 
-            .imgClau{
-                grid-area: img1;
-                width: 10rem;
-                height: 8rem;
-            }
 
-            .imgNico{
-                grid-area: img2;
-                width: 10rem;
-                height: 8rem;
-                margin: 0rem;
-            }
 
-            .imgJoel{
-                grid-area: img3;
-                width: 10rem;
-                height: 8rem;
-            }
 
-            .imgAndres{
-                grid-area: img4;
-                width: 10rem;
-                height: 8rem;
-                margin: 0rem;
-            }
 
-    
-}
-}
 
 
 

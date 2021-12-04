@@ -1,5 +1,7 @@
 @import "variables";
 
+
+@media screen and (max-width: 1300px) {
 h2.fuente-terciaria.chica{
     background-color:rgb(14, 13, 13) ;
     width: 51.1rem;
@@ -47,6 +49,7 @@ h2.fuente-terciaria.chica{
         #fechas p span{
             right: 46%;   
             position: absolute;
+            background-color:rgba(255, 255, 255, 0);
         }
 
         #fechas p strong {
@@ -55,6 +58,73 @@ h2.fuente-terciaria.chica{
             position: absolute;
         }
 }
+}
+
+@media screen and (min-width: 1301px) {
+
+    h2.fuente-terciaria.chica{
+        background-color:rgb(14, 13, 13) ;
+        width: 61.1rem;
+        padding: 0.7rem;
+        text-align: center;
+        text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3;
+    }
+    
+    .titulo-fecha{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+        color: $color-texto;
+        text-shadow: 1px 1px 0 #b581cd, 2px 2px 0 #9f78c4, 3px 3px 0 #996fbb, 4px 4px 0 #8a67b3;
+    }
+    
+    #contenedorFechas{ 
+        margin-top: 0.1rem;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-evenly;
+        align-items: center;
+    
+            #fechas{
+                background-color: $color-violeta;
+                display: flex;  
+                flex-direction: column;
+                height: 36.6rem; width: 61.1rem;
+                margin-bottom: 2rem;                      /* CUADRO FECHAS */
+            }
+    
+            #fechas p{   
+                margin: 0;
+                font-size: 1.1rem;
+                color: rgba(255, 255, 255, 0.349);  
+                padding: 0.7rem; 
+                position: relative;  
+            }
+    
+            #fechas p:hover{
+                background-color: rgb(14, 13, 13);
+                color: white;
+            }
+    
+            #fechas p span{
+                right: 46%;   
+                position: absolute;
+                background-color:rgba(255, 255, 255, 0);
+            }
+    
+            #fechas p strong {
+                right: 1rem;
+                cursor: pointer;
+                position: absolute;
+            }
+    }
+
+}
+
+
+
+
+
 
 @media screen and (max-width: 1024px) {
 
@@ -82,7 +152,7 @@ h2.fuente-terciaria.chica{
                     background-color: $color-violeta;
                     display: flex;  
                     flex-direction: column;
-                    height: 35.6rem; width: 23.1rem;
+                    height: 36.6rem; width: 23.1rem;
                     margin-bottom: 2rem;                      /* CUADRO FECHAS */
                 }
         

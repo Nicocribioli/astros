@@ -1,5 +1,13 @@
 @import "variables";
 
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -54,7 +62,7 @@ body{
     font-family: 'Monoton', cursive;
     text-align: center;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: #ffffffa4;
     background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
     letter-spacing: 0.5rem;
@@ -71,7 +79,7 @@ body{
     z-index: 10;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
     .navPrueba{
         position: relative;
         width: fit-content;
@@ -79,82 +87,199 @@ body{
     }
 }
 
-
-.nav__menu {
-    letter-spacing: 0.1rem;
-    display: inline-block;
-    position: relative;
-}
-
-        .nav__menu--subrrayado:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 3px;
-            bottom: 0;
-            left: 0;
-            background-color:  rgb(174, 23, 219);
-            transform-origin: bottom right;
-            transition: transform 0.30s ease-out;           
-        }
-
-        .nav__menu--subrrayado:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
-        .nav__menu--activo{
+nav{ 
+    .nav__menu {
         letter-spacing: 0.1rem;
-        text-decoration: underline 3px !important;
-        color:  rgb(174, 23, 219) !important;
-        }
+        display: inline-block;
+        position: relative;
+    }
 
-        .nav__menu--footer{
+            .nav__menu--subrrayado:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                background-color:  rgb(123, 19, 155);
+                transform-origin: bottom right;
+                transition: transform 0.30s ease-out;           
+            }
+
+            .nav__menu--subrrayado:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            .nav__menu--activo{
             letter-spacing: 0.1rem;
             text-decoration: underline 3px !important;
-        }
+            color:  rgb(123, 19, 155) !important;
+            }
 
-        a:link{
-        color: white;
-        text-decoration: none;
-        }
+            a:link{
+            color: white;
+            text-decoration: none;
+            }
 
-        a:visited{
-        color: rgb(160, 114, 187);
-        }
+            a:visited{
+            color: rgb(172, 155, 182);
+            }
 
-        a:hover{
-        color:  rgb(174, 23, 219);
-        }
-/* -------------------------------------------NAV BAR */
+            a:hover{
+            color:  rgb(123, 19, 155);
+            }
+}/* -------------------------------------------NAV BAR */
 
 
 footer{
-    display: flex;
-    background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
-    background-size: 30rem;
 
-    h4{
-        color: white;
-        text-shadow: $text-shadow2;
-    }
+    .footer__grid{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "navegacion copyr redes"
+        ;
+        background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
+        background-size: 30rem;
 
-    .footer__redes a:link{
-        color: rgb(255, 255, 255);
+        .navegacion{
+            list-style: none;
+            margin-left: 4rem;
+            padding: 1rem;
+            width: fit-content;
+            display: flex;
+            grid-area: navegacion;
+
+            ul, li{
+                list-style:none;
+            }
         }
 
-        .footer__redes a:visited{
-            color: rgb(255, 255, 255);
+        .copyr{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            grid-area: copyr;
         }
 
-        .footer__redes--hover a:hover{
+        .redes{
+            font-size: 1.9rem;
+            letter-spacing: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-area: redes;
+        }
+
+        h4{
+            color: white;
             text-shadow: $text-shadow2;
         }
 
-        .footer__nav{
-            font-size: 1rem;
+        .footer__redes a:link{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            }
+
+            .footer__redes a:visited{
+                color: rgb(255, 255, 255);
+            }
+
+            .footer__redes--hover a:hover{
+                text-shadow: $text-shadow2;
+            }
+
+            .footer__nav{
+                font-size: 1rem;
+            }
+
+    }
+
+}/* --------------------------------------------FOOTER */
+
+
+
+
+@media screen and (max-width: 769px) {
+
+footer{
+    height: fit-content;
+
+    .footer__grid{
+        height: 15rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "navegacion redes"
+        "copyr copyr"
+        ;
+        background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
+        background-size: 30rem;
+
+        .navegacion{
+            list-style: none;
+            margin-left: 0rem;
+            padding: 0rem;
+            width: fit-content;
+            display: flex;
+            grid-area: navegacion;
+
+            ul, li{
+                list-style:none;
+            }
         }
 
+        .copyr{
+            display: flex;
+            flex-direction: row;
+            height: fit-content;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 1rem;
+            grid-area: copyr;
+        }
 
-} /* --------------------------------------------FOOTER */
+        .imgnone{
+            display: none;
+        }
+
+        .redes{
+            font-size: 1.5rem;
+            letter-spacing: 0.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-area: redes;
+        }
+
+        h4{
+            color: white;
+            text-shadow: $text-shadow2;
+        }
+
+        .footer__redes a:link{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            }
+
+            .footer__redes a:visited{
+                color: rgb(255, 255, 255);
+            }
+
+            .footer__redes--hover a:hover{
+                text-shadow: $text-shadow2;
+            }
+
+            .footer__nav{
+                font-size: 1rem;
+            }
+}
+}
+}

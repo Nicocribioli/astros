@@ -1,0 +1,516 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 100%); /* BACKGROUND GRADIANT */
+}
+
+h2{
+    color:rgba(255, 255, 255, 0.692);
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+h4{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.titleIndex{
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffffa4;
+    letter-spacing: 0.5rem;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
+    background-size: 30rem;
+}                               /* TITULOS HEADER */
+
+.subrrayadoMenu {
+        display: inline-block;
+        position: relative;
+        color: #0087ca;
+}
+
+.subrrayadoMenu:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 6px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.30s ease-out;           
+}
+
+.subrrayadoMenu:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+}
+
+.menuActivo{
+    text-decoration: underline 7px !important;
+    color: rgb(15, 126, 230) !important;
+}
+
+a:link{
+    color: rgb(41, 41, 124);
+    text-decoration: none;
+}
+
+a:visited{
+    color: darkslategray;
+}
+
+a:hover{
+    color: rgb(15, 126, 230);
+}
+
+
+
+/*---------------------------------------- HEADER */
+
+.textoImagenes{
+    color:white;
+    background-color: rgba(153, 50, 204, 0.342);
+}
+
+.cancionAudio{
+    background: url(https://jooinn.com/images/text-background-3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: rgba(76, 0, 130, 0.267) outset 0.5rem;
+}
+
+.temaNuevo{
+    color:rgba(255, 255, 255, 0.692);
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+audio{
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* ACA COMIENZA EL FOOTER */
+
+footer p{
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.seguinos{
+    color:rgba(255, 255, 255, 0.692);
+    font-size: 1.3rem;
+    margin-top: 6rem;
+}
+
+.seguinos h2,p{
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.contacto{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 1.5rem;
+    margin-top: 6rem;
+}
+
+.contacto form{
+    display: grid;
+    grid-template-rows: 2rem 2rem 2rem;
+    grid-template-columns: auto auto;
+    align-content: center;   
+    grid-gap:0.7rem
+} 
+
+.contacto #nombre {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.contacto #emailContacto{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.contacto textarea{
+    grid-row: 1/4;
+    grid-column: 2/3;
+}
+
+.contacto button {  
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: start;
+}
+
+input,textarea{
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+}
+
+
+button{
+    border-color: grey;
+    color: white;
+    background-color: black;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+}
+
+button:hover{
+    border-color: white;
+    color: white;
+    background-color:rgba(65, 23, 99, 0.781);
+}
+
+footer{
+    display: flex;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/03/08/32/banner-1176676_960_720.jpg);
+    background-size: 30rem;
+}
+
+.colorRedes a:link{
+    color: rgb(199, 144, 224);
+}
+
+.colorRedes a:visited{
+    color: rgba(129, 23, 190, 0.288);
+}
+
+.colorRedes a:hover{
+    color: rgb(148, 112, 214);
+}
+
+
+/*------------------------------------ ACA TERMINA INDEX */
+
+h2.fuente-terciaria.chica{
+    background-color:rgb(14, 13, 13) ;
+    width: 51.1rem;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+.titulo-fecha{
+    text-align: center;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+#contenedorFechas{ 
+    margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#fechas{
+    background-color:rgba(60, 27, 70, 0.466);
+    display: flex;  
+    flex-direction: column;
+    height: 36.1rem; width: 51.1rem;
+    margin-bottom: 2rem;                      /* CUADRO FECHAS */
+}
+
+#fechas p{   
+    margin: 0;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.541);  
+    padding: 0.7rem; 
+    position: relative;  
+}
+
+#fechas p:hover{
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+
+#fechas p span{
+    right: 46%;   
+    position: absolute;
+}
+
+#fechas p strong {
+    right: 1rem;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+
+/*-------------------------------------------- FECHAS */
+
+.h2Videos{
+    margin: 2rem;
+    color:rgba(255, 255, 255, 0.692);
+    background-color: #3d164757;
+    border: inset #3d16479f 0.2rem;
+    width:fit-content;
+}
+
+.videosMusica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.videosMusica2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+
+iframe{
+    border-radius: 1.5rem;
+    height: 20rem; width: 25rem;
+    border: rgba(178, 149, 206, 0.363) ridge 0.2rem;
+}
+
+/*---------------------------------------------------------- MUSICA */
+
+
+
+.gridPadre{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2rem;
+    grid-template-columns: 18rem 18rem 18rem 18rem;
+    grid-template-rows: 17rem 17rem;
+    grid-gap: 1.3rem;
+    grid-template-areas: 
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img8"
+    ;
+}                                         /* GRID */
+
+.img1 {
+    position: absolute;
+    grid-area: img1;
+    width: 18rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.img2 {
+    position: absolute;
+    grid-area: img2;
+    width: 18rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.img3 {
+    position: absolute;
+    grid-area: img3;
+    width: 18rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.img4 {
+    position: absolute;
+    grid-area: img4;
+    width: 18rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.img5 {
+    position: absolute;
+    grid-area: img5;
+    width: 18rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.img6 {
+    position: absolute;
+    grid-area: img6;
+    width: 18rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.img7 {
+    position: absolute;
+    grid-area: img7;
+    width: 18rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.img8 {
+    position: absolute;
+    grid-area: img8;
+    width: 18rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.div1:hover .img1 {
+    transform: translateY(37%);
+}
+
+.div2:hover .img2 {
+    transform: translateY(37%);
+}
+
+.div3:hover .img3 {
+    transform: translateY(37%);
+}
+
+.div4:hover .img4 {
+    transform: translateY(37%);
+}
+
+.div5:hover .img5 {
+    transform: translateY(37%);
+}
+
+.div6:hover .img6 {
+    transform: translateY(37%);
+}
+
+.div7:hover .img7 {
+    transform: translateY(37%);
+}
+
+.div8:hover .img8 {
+    transform: translateY(37%);
+}
+
+.infoImg{
+    position: absolute;
+    display: block;
+    color: darkgray;
+    margin-left: 2.6rem;
+    margin-top: 2.5rem;
+    z-index: 1;
+}                           /* TEXTO ESCONDIDO */
+
+
+/*--------------------------------------- GALERIA */
+
+.titleSobre{
+    color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(60, 27, 70, 0.466);
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.textoSobre{
+    color: rgb(141, 139, 155);
+    letter-spacing: 0.1rem;
+    background-image: url(https://jooinn.com/images/text-background-3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: rgba(76, 0, 130, 0.267) outset 0.5rem;
+}
+
+.gridSobrenos{
+    height: 42rem;
+    display: grid;
+    grid-template-columns: 1fr 20rem 1fr;
+    grid-template-rows: 10rem 10rem 10rem 10rem;
+    grid-column-gap: 4rem;
+    grid-template-areas:
+    "historia img1 integrantes"
+    "historia img2 integrantes"
+    "historia img3 integrantes"
+    "historia img4 integrantes"
+    ;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}                                     /* GRID */
+
+.historiaAstros{
+    grid-area: historia;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+.imgClau{
+    grid-area: img1;
+    width: 10rem;
+    height: 9rem;
+    border-radius: 1.1rem;
+    border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+}
+
+.imgNico{
+    grid-area: img1;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1.1rem;
+    margin-left: 10rem;
+    border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+}
+
+.imgJoel{
+    grid-area: img3;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1.1rem;
+    border: rgba(76, 0, 130, 0.267) inset 0.3rem;
+}
+
+.imgAndres{
+    grid-area: img4;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1.1rem;
+    margin-left: 10rem;
+    border: rgba(76, 0, 130, 0.267) outset 0.3rem;
+}
+
+.integrantes{
+    grid-area: integrantes;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+/* ------------------------------------------SOBRE NOSOTROS */

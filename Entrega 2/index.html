@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilocss/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Monoton&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d4193cf05.js" crossorigin="anonymous"></script>
+    <title>Astros</title>
+    <meta name="keywords" content="banda, música, rock, astros, fechas, recitales">
+    <meta name="description" content="Enterate las ultimas novedades sobre Astros y sus porximos shows en vivo.">
+</head>
+
+<body>
+    <header>
+        <section>
+            <div>
+                <h1 class="titleIndex p-4">ASTROS</h1> <!-- TITULO -->
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav fs-3 me-3">
+                        <li class="nav-item ps-5 mt-2 mb-2 mt-lg-0 mb-lg-0 pe-lg-5 ps-lg-3">
+                            <a class="nav__menu--activo" aria-current="page" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav__menu nav__menu--subrrayado" href="./views/musica.html">MÚSICA</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav__menu nav__menu--subrrayado" href="./views/galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a class="nav__menu nav__menu--subrrayado" href="./views/fechas.html">FECHAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav__menu nav__menu--subrrayado" href="./views/sobrenosotros.html">SOBRE NOSOTROS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!-- NAV BAR -->
+        </section>
+    </header>
+    <section class="col-12 col-lg-8 offset-lg-2 mt-4 mb-2">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/astrosfoto1.png" class="d-block w-100" alt="Imagen del nuevo disco de Astrso Alma y Vida">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/vertigo.jpeg" class="d-block w-100" alt="Promocion del nuevo tema vertigo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="textoImagenes fs-1">YA DISPONIBLE EN YOUTUBE</h5>
+                        <p class="textoImagenes fs-5">Nuestro ultimo videoclip "Vertigo" ya esta disponible para escuchar en YouTube.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/ultimoround.jpeg" class="d-block w-100" alt="Promocion del tema ultimo round">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="textoImagenes fs-1">LA VIDA SIEMPRE DA REVANCHA</h5>
+                        <p class="textoImagenes fs-5">ESCUCHA NUESTRO TEMA "ULTIMO ROUND" DISPONIBLE EN YOUTUBE</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>                       <!-- IMG PRINCIPAL -->
+    <section class="container">
+        <div class="row">
+            <div class="seguinos col-12 offset-1 col-lg-6">
+                <h3>SEGUINOS</h3>
+                <p class="mb-3">ENTERATE DE LAS ULTIMAS NOVEDADES</p>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Ingresá tu email" id="email" required>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        SUSCRIBIRSE
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            Recibiras las ultimas novedades en tu casilla de email.
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok!</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contacto mb-5 offset-1 col-10 col-lg-4 offset-lg-0 ms-lg-0">
+                <h3>CONTACTO</h3>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Nombre" id="nombre" required>
+                    <input type="email" placeholder="Email" id="emailContacto" required>
+                    <textarea placeholder="Mensaje" rows="6" cols="40" id="mensaje"></textarea>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    ENVIAR
+                    </button>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            Tu mensaje fue enviado! Gracias.
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok!</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> <!-- FORMULARIO -->
+    <footer>
+        <section class="container">
+            <div class="d-flex justify-content-center">
+                <h4>REDES</h4>
+            </div>
+            <div class="d-flex justify-content-center fs-1 footer__redes footer__redes--hover">
+                <div>
+                    <a class="me-5 pe-5 footer__redes footer__redes--hover" href="https://www.instagram.com/astrosmusica/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="me-5 pe-5 footer__redes footer__redes--hover" href="https://www.youtube.com/channel/UCbcg0nM3cWnWp17Ox-6AtCg"
+                        target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div><a class="ps-1 footer__redes footer__redes--hover" href="https://twitter.com/astrosmusica" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer> <!-- FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
